@@ -1532,3 +1532,7 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .hero-bg { background-attachment: scroll; }
+}

@@ -5,13 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO - Zmieniony tytuł -->
+    <!-- SEO -->
     <title>Polityka Prywatności | Ubezpieczenia Marcin Baran</title>
-    <meta name="description" content="Mobilny agent ubezpieczeniowy w Rząśni i okolicach. Ubezpieczenia z dojazdem do klienta. Porównaj oferty OC, AC, na życie i dla firm bez wychodzenia z domu.">
+    <meta name="description" content="Polityka prywatności agencji Ubezpieczenia Marcin Baran w Rząśni. Informacje o przetwarzaniu danych osobowych, prawach klientów i bezpieczeństwie danych.">
+    <link rel="canonical" href="https://bartekfc25.github.io/tescik/prywatnosc.html">
+    <meta name="theme-color" content="#1d4ed8">
     <link rel="icon" href="favicon.png" type="image/png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bartekfc25.github.io/tescik/prywatnosc.html">
+    <meta property="og:title" content="Polityka Prywatności | Ubezpieczenia Marcin Baran">
+    <meta property="og:description" content="Polityka prywatności agencji Ubezpieczenia Marcin Baran w Rząśni. Informacje o przetwarzaniu danych osobowych, prawach klientów i bezpieczeństwie danych.">
+    <meta property="og:image" content="https://bartekfc25.github.io/tescik/agent.jpg">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:site_name" content="Ubezpieczenia Marcin Baran">
     
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <!-- Font Awesome — ładowanie asynchroniczne -->
+    <link rel="preload" href="fontawesome/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="fontawesome/css/all.min.css"></noscript>
+
+    <!-- font-display: swap dla Font Awesome -->
+    <style>
+        @font-face {
+            font-family: "Font Awesome 6 Free";
+            font-display: swap;
+            font-style: normal;
+            font-weight: 900;
+            src: url("fontawesome/webfonts/fa-solid-900.woff2") format("woff2"),
+                 url("fontawesome/webfonts/fa-solid-900.ttf") format("truetype");
+        }
+        @font-face {
+            font-family: "Font Awesome 6 Free";
+            font-display: swap;
+            font-style: normal;
+            font-weight: 400;
+            src: url("fontawesome/webfonts/fa-regular-400.woff2") format("woff2"),
+                 url("fontawesome/webfonts/fa-regular-400.ttf") format("truetype");
+        }
+        @font-face {
+            font-family: "Font Awesome 6 Brands";
+            font-display: swap;
+            font-style: normal;
+            font-weight: 400;
+            src: url("fontawesome/webfonts/fa-brands-400.woff2") format("woff2"),
+                 url("fontawesome/webfonts/fa-brands-400.ttf") format("truetype");
+        }
+    </style>
 
     <!-- JEDYNY plik CSS (wygenerowany przez tailwind.exe) -->
     <link href="dist/output.css" rel="stylesheet">
@@ -24,7 +64,7 @@
             <div class="flex justify-between h-20 items-center">
                 <!-- Logo -->
                 <a href="index.html#top" class="flex-shrink-0 flex items-center cursor-pointer">
-                    <img src="logo bez bg.png" alt="Logo Ubezpieczenia Marcin Baran" class="h-10 mr-3">
+                    <img src="logo bez bg.png" alt="Logo Ubezpieczenia Marcin Baran" class="h-10 mr-3" width="160" height="40">
                     <div class="flex flex-col">
                         <span class="font-heading font-bold text-xl text-brand-dark leading-tight">Marcin Baran</span>
                         <span class="text-xs text-gray-500 uppercase tracking-wider font-semibold">Ubezpieczenia</span>
@@ -40,14 +80,14 @@
                     <a href="index.html#towarzystwa" class="nav-link text-gray-600 hover:text-brand font-medium transition-colors">Partnerzy</a>
                     <a href="index.html#kontakt" class="nav-link text-gray-600 hover:text-brand font-medium transition-colors">Kontakt</a>
                     
-                    <a href="tel:+48600872523" class="flex items-center bg-brand-accent hover:bg-brand-accentHover text-white px-5 py-2.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                    <a href="tel:+48600872523" class="flex items-center bg-brand-accent hover:bg-brand-accentHover text-gray-900 px-5 py-2.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                         <i class="fa-solid fa-phone mr-2"></i> Zadzwoń
                     </a>
                 </div>
 
                 <!-- Przycisk menu mobilnego -->
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-brand focus:outline-none p-2">
+                    <button id="mobile-menu-btn" aria-label="Otwórz menu nawigacji" aria-expanded="false" class="text-gray-600 hover:text-brand focus:outline-none p-2">
                         <i class="fa-solid fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -134,7 +174,7 @@
             </div>
         </div>
 
-        <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+        <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
             <p>&copy; <span id="year"></span> Ubezpieczenia Marcin Baran. Wszelkie prawa zastrzeżone.</p>
         </div>
     </div>

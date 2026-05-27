@@ -5,13 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO - Twoje oryginalne teksty -->
-    <title>Ubezpieczenia Rząśnia | Mobilny Agent Marcin Baran | Pajęczno, Trębaczew, Kiełczygłów,  | Dojazd do klienta</title>
+    <!-- SEO -->
+    <title>Ubezpieczenia Rząśnia – Mobilny Agent Marcin Baran</title>
     <meta name="description" content="Mobilny agent ubezpieczeniowy w Rząśni i okolicach. Ubezpieczenia z dojazdem do klienta. Porównaj oferty OC, AC, na życie i dla firm bez wychodzenia z domu.">
+    <link rel="canonical" href="https://bartekfc25.github.io/tescik/">
+    <meta name="theme-color" content="#1d4ed8">
     <link rel="icon" href="favicon.png" type="image/png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bartekfc25.github.io/tescik/">
+    <meta property="og:title" content="Ubezpieczenia Rząśnia – Mobilny Agent Marcin Baran">
+    <meta property="og:description" content="Mobilny agent ubezpieczeniowy w Rząśni i okolicach. Ubezpieczenia z dojazdem do klienta. Porównaj oferty OC, AC, na życie i dla firm bez wychodzenia z domu.">
+    <meta property="og:image" content="https://bartekfc25.github.io/tescik/agent.jpg">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:site_name" content="Ubezpieczenia Marcin Baran">
     
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <!-- Preload hero background image — kluczowe dla LCP na mobile -->
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1556761175-5973dc0f32d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80">
+
+    <!-- Font Awesome — ładowanie asynchroniczne (eliminuje render-blocking i 97% unused CSS) -->
+    <link rel="preload" href="fontawesome/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="fontawesome/css/all.min.css"></noscript>
+
+    <!-- font-display: swap dla Font Awesome (eliminuje blokowanie renderowania fontu) -->
+    <style>
+        @font-face {
+            font-family: "Font Awesome 6 Free";
+            font-display: swap;
+            font-style: normal;
+            font-weight: 900;
+            src: url("fontawesome/webfonts/fa-solid-900.woff2") format("woff2"),
+                 url("fontawesome/webfonts/fa-solid-900.ttf") format("truetype");
+        }
+        @font-face {
+            font-family: "Font Awesome 6 Free";
+            font-display: swap;
+            font-style: normal;
+            font-weight: 400;
+            src: url("fontawesome/webfonts/fa-regular-400.woff2") format("woff2"),
+                 url("fontawesome/webfonts/fa-regular-400.ttf") format("truetype");
+        }
+        @font-face {
+            font-family: "Font Awesome 6 Brands";
+            font-display: swap;
+            font-style: normal;
+            font-weight: 400;
+            src: url("fontawesome/webfonts/fa-brands-400.woff2") format("woff2"),
+                 url("fontawesome/webfonts/fa-brands-400.ttf") format("truetype");
+        }
+        @media (max-width: 767px) {
+            .hero-bg { background-attachment: scroll; }
+        }
+    </style>
 
     <!-- JEDYNY plik CSS (wygenerowany przez tailwind.exe) -->
     <link href="dist/output.css" rel="stylesheet">
@@ -24,7 +70,7 @@
             <div class="flex justify-between h-20 items-center">
                 <!-- Logo -->
                 <a href="#top" class="flex-shrink-0 flex items-center cursor-pointer">
-                    <img src="logo bez bg.png" alt="Logo Ubezpieczenia Marcin Baran" class="h-10 mr-3">
+                    <img src="logo bez bg.png" alt="Logo Ubezpieczenia Marcin Baran" class="h-10 mr-3" width="160" height="40">
                     <div class="flex flex-col">
                         <span class="font-heading font-bold text-xl text-brand-dark leading-tight">Marcin Baran</span>
                         <span class="text-xs text-gray-500 uppercase tracking-wider font-semibold">Ubezpieczenia</span>
@@ -40,14 +86,14 @@
                     <a href="#towarzystwa" class="nav-link text-gray-600 hover:text-brand font-medium transition-colors">Partnerzy</a>
                     <a href="#kontakt" class="nav-link text-gray-600 hover:text-brand font-medium transition-colors">Kontakt</a>
                     
-                    <a href="tel:+48600872523" class="flex items-center bg-brand-accent hover:bg-brand-accentHover text-white px-5 py-2.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                    <a href="tel:+48600872523" class="flex items-center bg-brand-accent hover:bg-brand-accentHover text-gray-900 px-5 py-2.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                         <i class="fa-solid fa-phone mr-2"></i> Zadzwoń
                     </a>
                 </div>
 
                 <!-- Przycisk menu mobilnego -->
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-brand focus:outline-none p-2">
+                    <button id="mobile-menu-btn" aria-label="Otwórz menu nawigacji" aria-expanded="false" class="text-gray-600 hover:text-brand focus:outline-none p-2">
                         <i class="fa-solid fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -67,6 +113,7 @@
         </div>
     </nav>
 
+<main>
 <!-- HERO SECTION -->
     <header id="top" class="hero-bg min-h-screen flex flex-col justify-start md:justify-center relative pt-32 pb-32 md:pb-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full text-center">
@@ -93,7 +140,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="tel:+48600872523" class="bg-brand-accent text-white px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center">
+                    <a href="tel:+48600872523" class="bg-brand-accent text-gray-900 px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center">
                         <i class="fa-solid fa-phone-volume mr-3 text-xl"></i> Sprawdź swoją ofertę
                     </a>
                     <a href="#jak-dzialamy" class="bg-white hover:bg-gray-100 text-gray-900 px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center">
@@ -108,7 +155,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col lg:flex-row items-center gap-12"> 
                 <div class="lg:w-1/2 reveal">
-                    <img src="agent.jpg" alt="Marcin Baran, mobilny agent ubezpieczeniowy w biurze" class="rounded-2xl shadow-2xl border-4 border-white">
+                    <img src="agent.jpg" alt="Marcin Baran, mobilny agent ubezpieczeniowy w biurze" class="rounded-2xl shadow-2xl border-4 border-white" width="600" height="450">
                 </div>
                 <div class="lg:w-1/2 reveal">
                     <h2 class="text-brand font-bold uppercase tracking-widest text-sm mb-2">O nas</h2>
@@ -186,7 +233,7 @@
             <div class="text-center mt-16 reveal">
                 <p class="text-xl md:text-2xl font-heading font-bold text-gray-800">Od kontaktu do polisy nawet tego samego dnia!</p>
                 <!-- NOWY PRZYCISK CTA -->
-                <a href="#kontakt" class="mt-8 inline-flex items-center bg-brand-accent hover:bg-brand-accentHover text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-xl">
+                <a href="#kontakt" class="mt-8 inline-flex items-center bg-brand-accent hover:bg-brand-accentHover text-gray-900 px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-xl">
                     Przejdź do formularza <i class="fa-solid fa-arrow-right ml-2"></i>
                 </a>
             </div>
@@ -319,7 +366,7 @@
                 <p class="text-3xl md:text-4xl font-heading font-bold text-white leading-tight mb-8">
                     Nie czekaj – <span class="text-brand-accent">sprawdź swoją ofertę</span> teraz!
                 </p>
-                <a href="#kontakt" class="inline-flex items-center bg-brand-accent hover:bg-brand-accentHover text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                <a href="#kontakt" class="inline-flex items-center bg-brand-accent hover:bg-brand-accentHover text-gray-900 px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                     <i class="fa-solid fa-arrow-right mr-3 text-xl"></i> Przejdź do kontaktu
                 </a>
             </div>
@@ -334,37 +381,37 @@
             <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
                 <!-- Logotypy SVG -->
                 <div class="bg-gray-800 rounded-lg border border-gray-700 flex items-center justify-center h-20 w-36 p-2 shadow-sm hover:shadow-lg transition-all duration-300">
-                    <img src="logos/agroubezpieczenia.svg" alt="Logo Agro Ubezpieczenia" class="max-h-full max-w-full object-contain">
+                    <img src="logos/agroubezpieczenia.svg" alt="Logo Agro Ubezpieczenia" class="max-h-full max-w-full object-contain" width="112" height="64">
                 </div>
                 <div class="bg-gray-800 rounded-lg border border-gray-700 flex items-center justify-center h-20 w-36 p-2 shadow-sm hover:shadow-lg transition-all duration-300">
-                    <img src="logos/allianz.svg" alt="Logo Allianz" class="max-h-full max-w-full object-contain">
+                    <img src="logos/allianz.svg" alt="Logo Allianz" class="max-h-full max-w-full object-contain" width="112" height="64">
                 </div>
                 <div class="bg-gray-800 rounded-lg border border-gray-700 flex items-center justify-center h-20 w-36 p-2 shadow-sm hover:shadow-lg transition-all duration-300">
-                    <img src="logos/compensa.svg" alt="Logo Compensa" class="max-h-full max-w-full object-contain">
+                    <img src="logos/compensa.svg" alt="Logo Compensa" class="max-h-full max-w-full object-contain" width="112" height="64">
                 </div>
                 <div class="bg-gray-800 rounded-lg border border-gray-700 flex items-center justify-center h-20 w-36 p-2 shadow-sm hover:shadow-lg transition-all duration-300">
-                    <img src="logos/defendinsurance.svg" alt="Logo Defend Insurance" class="max-h-full max-w-full object-contain">
+                    <img src="logos/defendinsurance.svg" alt="Logo Defend Insurance" class="max-h-full max-w-full object-contain" width="112" height="64">
                 </div>
                 <div class="bg-gray-800 rounded-lg border border-gray-700 flex items-center justify-center h-20 w-36 p-2 shadow-sm hover:shadow-lg transition-all duration-300">
-                    <img src="logos/generali.svg" alt="Logo Generali" class="max-h-full max-w-full object-contain">
+                    <img src="logos/generali.svg" alt="Logo Generali" class="max-h-full max-w-full object-contain" width="112" height="64">
                 </div>
                 <div class="bg-gray-800 rounded-lg border border-gray-700 flex items-center justify-center h-20 w-36 p-2 shadow-sm hover:shadow-lg transition-all duration-300">
-                    <img src="logos/hdi.svg" alt="Logo HDI" class="max-h-full max-w-full object-contain">
+                    <img src="logos/hdi.svg" alt="Logo HDI" class="max-h-full max-w-full object-contain" width="112" height="64">
                 </div>
                 <div class="bg-gray-800 rounded-lg border border-gray-700 flex items-center justify-center h-20 w-36 p-2 shadow-sm hover:shadow-lg transition-all duration-300">
-                    <img src="logos/interrisk.svg" alt="Logo InterRisk" class="max-h-full max-w-full object-contain">
+                    <img src="logos/interrisk.svg" alt="Logo InterRisk" class="max-h-full max-w-full object-contain" width="112" height="64">
                 </div>
                 <div class="bg-gray-800 rounded-lg border border-gray-700 flex items-center justify-center h-20 w-36 p-2 shadow-sm hover:shadow-lg transition-all duration-300">
-                    <img src="logos/link4.svg" alt="Logo Link4" class="max-h-full max-w-full object-contain">
+                    <img src="logos/link4.svg" alt="Logo Link4" class="max-h-full max-w-full object-contain" width="112" height="64">
                 </div>
                 <div class="bg-gray-800 rounded-lg border border-gray-700 flex items-center justify-center h-20 w-36 p-2 shadow-sm hover:shadow-lg transition-all duration-300">
-                    <img src="logos/proama.svg" alt="Logo Proama" class="max-h-full max-w-full object-contain">
+                    <img src="logos/proama.svg" alt="Logo Proama" class="max-h-full max-w-full object-contain" width="112" height="64">
                 </div>
                 <div class="bg-gray-800 rounded-lg border border-gray-700 flex items-center justify-center h-20 w-36 p-2 shadow-sm hover:shadow-lg transition-all duration-300">
-                    <img src="logos/pzu.svg" alt="Logo PZU" class="max-h-full max-w-full object-contain">
+                    <img src="logos/pzu.svg" alt="Logo PZU" class="max-h-full max-w-full object-contain" width="112" height="64">
                 </div>
                 <div class="bg-gray-800 rounded-lg border border-gray-700 flex items-center justify-center h-20 w-36 p-2 shadow-sm hover:shadow-lg transition-all duration-300">
-                    <img src="logos/signaliduna.svg" alt="Logo Signal Iduna" class="max-h-full max-w-full object-contain">
+                    <img src="logos/signaliduna.svg" alt="Logo Signal Iduna" class="max-h-full max-w-full object-contain" width="112" height="64">
                 </div>
             </div>
             
@@ -397,17 +444,18 @@
                             <div>
                                 <h5 class="text-gray-300 text-sm uppercase tracking-wider mb-1">Adres biura</h5>
                                 <p class="text-lg font-medium">Ubezpieczenia Marcin Baran<br>ul. Kościuszki 2<br>98-332 Rząśnia</p>
-                                <p class="text-sm text-gray-400 mt-2 italic">Możesz też umówić spotkanie u siebie!</p>
+                                <p class="text-sm text-gray-300 mt-2 italic">Możesz też umówić spotkanie u siebie!</p>
                             </div>
                         </div>
 
                         <!-- Mapa Google (Nowa lokalizacja) -->
                         <div class="relative z-10">
-                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d343.4210121191619!2d19.054558933368323!3d51.2195031474763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2spl!4v1777405511137!5m2!1sen!2spl" 
-                                class="w-full h-56 rounded-xl border-2 border-white/20 shadow-lg" 
-                                style="border:0;" 
-                                allowfullscreen="" 
-                                loading="lazy" 
+                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d343.4210121191619!2d19.054558933368323!3d51.2195031474763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2spl!4v1777405511137!5m2!1sen!2spl"
+                                title="Mapa dojazdu do biura Ubezpieczenia Marcin Baran, ul. Kościuszki 2, Rząśnia"
+                                class="w-full h-56 rounded-xl border-2 border-white/20 shadow-lg"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade">
                             </iframe>
                         </div>
@@ -462,7 +510,7 @@
 
                 <!-- Prawa kolumna: Formularz -->
                 <div class="p-8 sm:p-12">
-                    <h4 class="text-2xl font-bold text-gray-900 font-heading mb-6">Poproś o kontakt - oddzwonimy w ciągu 15 minut i przygotujemy dla Ciebie najlepszą ofertę</h4>
+                    <h4 class="text-2xl font-bold text-gray-900 font-heading mb-6">Poproś o kontakt – oddzwonimy w ciągu 15 minut i przygotujemy dla Ciebie najlepszą ofertę</h4>
                     <form name="kontakt" method="POST" data-netlify="true" class="space-y-6">
     <!-- Krytyczne pole dla Netlify - bez tego formularz nie zostanie wykryty -->
     <input type="hidden" name="form-name" value="kontakt" />
@@ -522,6 +570,7 @@
             </div>
         </div>
     </section>
+    </main>
     <!-- STOPKA -->
     <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -567,22 +616,76 @@
                 </div>
             </div>
 
-            <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+            <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
                 <p>&copy; <span id="year"></span> Ubezpieczenia Marcin Baran. Wszelkie prawa zastrzeżone.</p>
             </div>
         </div>
     </footer>
 <!-- Pływający przycisk kontaktu (FAB) - widoczny tylko na desktopie -->
-    <a href="#formularz-kontaktowy" id="floating-btn" class="fixed bottom-8 right-8 z-50 bg-brand-accent hover:bg-brand-accentHover text-white px-5 py-4 rounded-full shadow-lg hover:shadow-2xl hidden md:flex items-center
+    <a href="#formularz-kontaktowy" id="floating-btn" aria-label="Szybki kontakt – przejdź do formularza" class="fixed bottom-8 right-8 z-50 bg-brand-accent hover:bg-brand-accentHover text-gray-900 px-5 py-4 rounded-full shadow-lg hover:shadow-2xl hidden md:flex items-center
         opacity-0 translate-y-8 pointer-events-none transform hover:scale-110 transition-all duration-500 ease-in-out">
-        <i class="fa-solid fa-envelope text-xl"></i>
+        <i class="fa-solid fa-envelope text-xl" aria-hidden="true"></i>
         <span class="ml-3 font-semibold">Szybki kontakt</span>
     </a>
 <!-- Pływający przycisk do dzwonienia (FAB) - widoczny tylko na mobile, po prawej stronie -->
-    <a href="tel:+48600872523" id="mobile-call-fab" class="fixed bottom-8 right-8 z-50 bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full shadow-lg hover:shadow-xl flex items-center justify-center md:hidden transition-all duration-300 ease-in-out transform hover:scale-110
+    <a href="tel:+48600872523" id="mobile-call-fab" aria-label="Zadzwoń do nas: +48 600 872 523" class="fixed bottom-8 right-8 z-50 bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full shadow-lg hover:shadow-xl flex items-center justify-center md:hidden transition-all duration-300 ease-in-out transform hover:scale-110
         opacity-0 translate-y-8 pointer-events-none">
-        <i class="fa-solid fa-phone text-2xl"></i>
+        <i class="fa-solid fa-phone text-2xl" aria-hidden="true"></i>
     </a>
+<!-- Schema.org — dane strukturalne LocalBusiness / InsuranceAgency -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": ["LocalBusiness", "InsuranceAgency"],
+        "name": "Ubezpieczenia Marcin Baran",
+        "description": "Mobilny agent ubezpieczeniowy w Rząśni i okolicach. Ubezpieczenia z dojazdem do klienta: OC, AC, na życie, majątkowe, turystyczne i dla firm.",
+        "url": "https://bartekfc25.github.io/tescik/",
+        "telephone": "+48600872523",
+        "email": "ubezpieczenia.rzasnia@onet.pl",
+        "image": "https://bartekfc25.github.io/tescik/agent.jpg",
+        "priceRange": "$$",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ul. Kościuszki 2",
+            "addressLocality": "Rząśnia",
+            "postalCode": "98-332",
+            "addressCountry": "PL"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 51.2195031474763,
+            "longitude": 19.054558933368323
+        },
+        "areaServed": [
+            {"@type": "City", "name": "Rząśnia"},
+            {"@type": "City", "name": "Pajęczno"},
+            {"@type": "City", "name": "Trębaczew"},
+            {"@type": "City", "name": "Kiełczygłów"}
+        ],
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Monday",
+                "opens": "17:30",
+                "closes": "21:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "16:00",
+                "closes": "21:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "17:00"
+            }
+        ],
+        "sameAs": []
+    }
+    </script>
+
 <!-- SKRYPTY GŁÓWNE -->
     <script>
         // 1. Ustawienie roku
@@ -594,13 +697,16 @@
 
         if (btn && menu) {
             btn.addEventListener('click', () => {
+                const isExpanded = !menu.classList.contains('hidden');
                 menu.classList.toggle('hidden');
+                btn.setAttribute('aria-expanded', String(!isExpanded));
             });
-            
+
             const mobileLinks = menu.querySelectorAll('a');
             mobileLinks.forEach(link => {
                 link.addEventListener('click', () => {
                     menu.classList.add('hidden');
+                    btn.setAttribute('aria-expanded', 'false');
                 });
             });
         }
