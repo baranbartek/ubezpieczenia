@@ -21,9 +21,6 @@
     <meta property="og:locale" content="pl_PL">
     <meta property="og:site_name" content="Ubezpieczenia Marcin Baran">
     
-    <!-- Preload hero background image — kluczowe dla LCP na mobile -->
-    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1556761175-5973dc0f32d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80">
-
     <!-- Font Awesome — ładowanie asynchroniczne (eliminuje render-blocking i 97% unused CSS) -->
     <link rel="preload" href="fontawesome/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="fontawesome/css/all.min.css"></noscript>
@@ -53,9 +50,6 @@
             font-weight: 400;
             src: url("fontawesome/webfonts/fa-brands-400.woff2") format("woff2"),
                  url("fontawesome/webfonts/fa-brands-400.ttf") format("truetype");
-        }
-        @media (max-width: 767px) {
-            .hero-bg { background-attachment: scroll; }
         }
     </style>
 
