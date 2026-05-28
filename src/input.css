@@ -36,8 +36,8 @@
 }
 @media (min-width: 768px) {
     .hero-inner {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
 
