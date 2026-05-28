@@ -654,8 +654,11 @@
 
 <!-- SKRYPTY GŁÓWNE -->
     <script>
-        // Wyłącza natywne przywracanie pozycji scrolla przez przeglądarkę
+        // Scroll restoration: przywróć pozycję jeśli poza sekcją hero, inaczej wróć na górę
         if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+        const _savedScroll = parseInt(sessionStorage.getItem('scrollY') || '0');
+        if (_savedScroll > window.innerHeight) window.scrollTo(0, _savedScroll);
+        window.addEventListener('beforeunload', () => sessionStorage.setItem('scrollY', window.scrollY));
 
         // 1. Ustawienie roku
         document.getElementById('year').textContent = new Date().getFullYear();
