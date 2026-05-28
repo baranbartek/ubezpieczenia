@@ -675,6 +675,7 @@
                     menu.classList.remove('menu-opening');
                 } else {
                     menu.classList.remove('hidden');
+                    menu.offsetHeight; // wymusza reflow – bez tego animacja nie startuje
                     menu.classList.add('menu-opening');
                 }
                 btn.setAttribute('aria-expanded', String(!isExpanded));
