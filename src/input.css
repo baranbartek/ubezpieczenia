@@ -25,18 +25,6 @@ main {
     padding-top: 5rem;
 }
 
-.hero-section {
-    padding-top: 1.5rem;
-    padding-bottom: 5rem;
-}
-
-@media (min-width: 768px) {
-    .hero-section {
-        padding-top: 3rem;
-        padding-bottom: 4rem;
-    }
-}
-
 .hero-bg {
     background-image: linear-gradient(rgba(15, 25, 70, 0.85), rgba(29, 78, 216, 0.8));
 }
