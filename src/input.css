@@ -21,6 +21,26 @@
 
 .animate-hero { animation: fadeInUp 1s ease-out forwards; }
 
+.hero-section {
+    justify-content: flex-start;
+}
+@media (min-width: 768px) {
+    .hero-section {
+        justify-content: center;
+    }
+}
+
+.hero-inner {
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+}
+@media (min-width: 768px) {
+    .hero-inner {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
 main {
     padding-top: 5rem;
 }
