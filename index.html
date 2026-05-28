@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- Natywne, płynne przewijanie obsługiwane przez przeglądarkę + margines na menu -->
-<html lang="pl" style="scroll-behavior: smooth; scroll-padding-top: 6rem;">
+<html lang="pl" style="scroll-padding-top: 6rem;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -692,9 +692,7 @@
                 const target = document.querySelector(href);
                 if (target) {
                     e.preventDefault();
-                    const navbarEl = document.getElementById('navbar');
-                    const offset = target.getBoundingClientRect().top + window.pageYOffset - (navbarEl ? navbarEl.offsetHeight : 80);
-                    window.scrollTo({ top: offset, behavior: 'smooth' });
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
         });
