@@ -67,7 +67,7 @@
         </div>
 
         <!-- Rozwijane Menu Mobilne (zmieniona kolejność) -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
+        <div id="mobile-menu" class="md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
             <div class="px-4 pt-2 pb-6 space-y-1">
                 <a href="#o-firmie" class="block px-3 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-brand rounded-md">O firmie</a>
                 <a href="#jak-dzialamy" class="block px-3 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-brand rounded-md">Jak działamy?</a>
@@ -669,15 +669,15 @@
 
         if (btn && menu) {
             btn.addEventListener('click', () => {
-                const isExpanded = !menu.classList.contains('hidden');
-                menu.classList.toggle('hidden');
+                const isExpanded = menu.classList.contains('open');
+                menu.classList.toggle('open');
                 btn.setAttribute('aria-expanded', String(!isExpanded));
             });
 
             const mobileLinks = menu.querySelectorAll('a');
             mobileLinks.forEach(link => {
                 link.addEventListener('click', () => {
-                    menu.classList.add('hidden');
+                    menu.classList.remove('open');
                     btn.setAttribute('aria-expanded', 'false');
                 });
             });

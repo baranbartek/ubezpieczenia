@@ -70,6 +70,17 @@ main {
     }
 }
 
+#mobile-menu {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.35s ease, opacity 0.25s ease;
+}
+#mobile-menu.open {
+    max-height: 500px;
+    opacity: 1;
+}
+
 .nav-link { position: relative; padding-bottom: 6px; }
 .nav-link::after {
     content: '';
