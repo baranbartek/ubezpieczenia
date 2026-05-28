@@ -74,9 +74,12 @@ main {
     from { opacity: 0; transform: translateY(-8px); }
     to   { opacity: 1; transform: translateY(0); }
 }
-.menu-opening {
-    animation: menuDown 0.3s ease forwards;
+@keyframes menuUp {
+    from { opacity: 1; transform: translateY(0); }
+    to   { opacity: 0; transform: translateY(-8px); }
 }
+.menu-opening { animation: menuDown 0.3s ease forwards; }
+.menu-closing  { animation: menuUp  0.25s ease forwards; }
 
 .nav-link { position: relative; padding-bottom: 6px; }
 .nav-link::after {

@@ -671,11 +671,15 @@
             btn.addEventListener('click', () => {
                 const isExpanded = !menu.classList.contains('hidden');
                 if (isExpanded) {
-                    menu.classList.add('hidden');
                     menu.classList.remove('menu-opening');
+                    menu.classList.add('menu-closing');
+                    setTimeout(() => {
+                        menu.classList.add('hidden');
+                        menu.classList.remove('menu-closing');
+                    }, 250);
                 } else {
                     menu.classList.remove('hidden');
-                    menu.offsetHeight; // wymusza reflow – bez tego animacja nie startuje
+                    menu.offsetHeight;
                     menu.classList.add('menu-opening');
                 }
                 btn.setAttribute('aria-expanded', String(!isExpanded));
