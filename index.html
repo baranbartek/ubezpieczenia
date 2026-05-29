@@ -654,10 +654,16 @@
 
 <!-- SKRYPTY GŁÓWNE -->
     <script>
-        // Scroll restoration: native auto + korekta tylko gdy w sekcji hero
-        if ('scrollRestoration' in history) history.scrollRestoration = 'auto';
-        window.addEventListener('pageshow', function() {
-            if (window.scrollY > 0 && window.scrollY < window.innerHeight) window.scrollTo(0, 0);
+        // Scroll restoration: manual + sessionStorage, restore before first paint
+        if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+        (function() {
+            try {
+                var pos = parseInt(sessionStorage.getItem('scrollY') || '0', 10);
+                if (pos > window.innerHeight) window.scrollTo(0, pos);
+            } catch(e) {}
+        })();
+        window.addEventListener('pagehide', function() {
+            try { sessionStorage.setItem('scrollY', window.scrollY); } catch(e) {}
         });
 
         // 1. Ustawienie roku
