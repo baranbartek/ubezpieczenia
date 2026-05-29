@@ -671,16 +671,20 @@
             btn.addEventListener('click', () => {
                 const isExpanded = !menu.classList.contains('hidden');
                 if (isExpanded) {
-                    menu.classList.remove('menu-opening');
-                    menu.classList.add('menu-closing');
+                    menu.style.opacity = '0';
+                    menu.style.transform = 'translateY(-8px)';
                     setTimeout(() => {
                         menu.classList.add('hidden');
-                        menu.classList.remove('menu-closing');
+                        menu.style.opacity = '';
+                        menu.style.transform = '';
                     }, 250);
                 } else {
                     menu.classList.remove('hidden');
+                    menu.style.opacity = '0';
+                    menu.style.transform = 'translateY(-8px)';
                     menu.offsetHeight;
-                    menu.classList.add('menu-opening');
+                    menu.style.opacity = '1';
+                    menu.style.transform = 'translateY(0)';
                 }
                 btn.setAttribute('aria-expanded', String(!isExpanded));
             });
@@ -689,7 +693,8 @@
             mobileLinks.forEach(link => {
                 link.addEventListener('click', () => {
                     menu.classList.add('hidden');
-                    menu.classList.remove('menu-opening');
+                    menu.style.opacity = '';
+                    menu.style.transform = '';
                     btn.setAttribute('aria-expanded', 'false');
                 });
             });
