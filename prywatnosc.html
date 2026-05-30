@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- SEO -->
     <title>Polityka Prywatności | Ubezpieczenia Marcin Baran</title>
     <meta name="description" content="Polityka prywatności agencji Ubezpieczenia Marcin Baran w Rząśni. Informacje o przetwarzaniu danych osobowych, prawach klientów i bezpieczeństwie danych.">
@@ -20,14 +20,128 @@
     <meta property="og:image" content="https://bartekfc25.github.io/tescik/agent.jpg">
     <meta property="og:locale" content="pl_PL">
     <meta property="og:site_name" content="Ubezpieczenia Marcin Baran">
-    
+
     <!-- Font Awesome — ładowanie asynchroniczne -->
     <link rel="preload" href="fontawesome/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="fontawesome/css/all.min.css"></noscript>
 
-
     <!-- JEDYNY plik CSS (wygenerowany przez tailwind.exe) -->
     <link href="dist/output.css" rel="stylesheet">
+
+    <style>
+        /* Dodatkowe style dla treści polityki prywatności */
+        .policy-content h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1e3a5f;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        .policy-content h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #1d4ed8;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        .policy-content p {
+            margin-bottom: 1rem;
+            line-height: 1.75;
+            color: #374151;
+        }
+        .policy-content ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .policy-content ul li {
+            margin-bottom: 0.4rem;
+            color: #374151;
+            line-height: 1.7;
+        }
+        .policy-content ol {
+            list-style-type: decimal;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .policy-content ol li {
+            margin-bottom: 0.4rem;
+            color: #374151;
+            line-height: 1.7;
+        }
+        .policy-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        .policy-content table th {
+            background-color: #1d4ed8;
+            color: white;
+            padding: 0.6rem 0.8rem;
+            text-align: left;
+            font-weight: 600;
+        }
+        .policy-content table td {
+            padding: 0.6rem 0.8rem;
+            border: 1px solid #e5e7eb;
+            vertical-align: top;
+        }
+        .policy-content table tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        .alert-box {
+            background-color: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 1rem 1.25rem;
+            margin: 1rem 0 1.5rem 0;
+            border-radius: 0 0.375rem 0.375rem 0;
+        }
+        .alert-box p {
+            margin: 0;
+            color: #92400e;
+            font-size: 0.9rem;
+        }
+        .info-box {
+            background-color: #eff6ff;
+            border-left: 4px solid #1d4ed8;
+            padding: 1rem 1.25rem;
+            margin: 1rem 0 1.5rem 0;
+            border-radius: 0 0.375rem 0.375rem 0;
+        }
+        .info-box p {
+            margin: 0;
+            color: #1e40af;
+            font-size: 0.9rem;
+        }
+        .toc {
+            background-color: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .toc ol {
+            margin-bottom: 0;
+        }
+        .toc a {
+            color: #1d4ed8;
+            text-decoration: none;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        .placeholder {
+            background-color: #fef9c3;
+            border: 1px dashed #ca8a04;
+            padding: 0.15rem 0.4rem;
+            border-radius: 0.25rem;
+            font-weight: 600;
+            color: #713f12;
+        }
+    </style>
 </head>
 <body class="font-sans text-gray-800 antialiased bg-gray-50">
 
@@ -51,7 +165,7 @@
                     <a href="index.html#dlaczego-my" class="nav-link text-gray-600 hover:text-brand font-medium transition-colors">Dlaczego my</a>
                     <a href="index.html#towarzystwa" class="nav-link text-gray-600 hover:text-brand font-medium transition-colors">Partnerzy</a>
                     <a href="index.html#kontakt" class="nav-link text-gray-600 hover:text-brand font-medium transition-colors">Kontakt</a>
-                    
+
                     <a href="tel:+48600872523" class="flex items-center bg-brand-accent hover:bg-brand-accentHover text-gray-900 px-5 py-2.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                         <i class="fa-solid fa-phone mr-2"></i> Zadzwoń
                     </a>
@@ -82,22 +196,446 @@
 <!-- GŁÓWNA TREŚĆ -->
 <main class="bg-gray-50 py-32">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 class="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-12 text-center">
+        <h1 class="text-4xl md:text-5xl font-heading font-bold text-gray-900 mb-4 text-center">
             Polityka Prywatności
         </h1>
-        
-        <!-- Miejsce na skrypt Iubenda -->
-        <div class="text-gray-600 leading-relaxed space-y-4">
-            <!-- Tutaj zostanie wklejony kod polityki prywatności, np. z Iubenda -->
-            <p>Prosimy o wklejenie tutaj treści polityki prywatności wygenerowanej przez zewnętrzne narzędzie, np. Iubenda.</p>
-            <p>Przykładowy tekst: Administratorem danych osobowych jest Marcin Baran prowadzący działalność gospodarczą pod firmą Ubezpieczenia Marcin Baran...</p>
-            <div class="prose lg:prose-lg max-w-none">
-                <h2>Wstęp</h2>
-                <p>Poniższa Polityka Prywatności określa zasady gromadzenia, przetwarzania i wykorzystywania danych osobowych pozyskanych od Państwa przez stronę internetową [adres strony], prowadzoną przez Marcina Barana prowadzącego działalność gospodarczą pod firmą Ubezpieczenia Marcin Baran z siedzibą w Rząśni.</p>
-                <p>Dbamy o Państwa prywatność i bezpieczeństwo danych, dlatego prosimy o zapoznanie się z poniższymi informacjami.</p>
-                <!-- Tutaj należy wkleić pełną, prawnie poprawną treść polityki prywatności, najlepiej wygenerowaną przez specjalistyczne narzędzie lub przygotowaną przez prawnika. -->
+
+        <p class="text-center text-gray-500 text-sm mb-12">
+            Data wejścia w życie: <span class="placeholder">[PLACEHOLDER: data wejścia w życie]</span> &nbsp;|&nbsp;
+            Ostatnia aktualizacja: <span class="placeholder">[PLACEHOLDER: data ostatniej aktualizacji]</span>
+        </p>
+
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 sm:p-12 policy-content">
+
+            <!-- =====================================================
+                 SPIS TREŚCI
+                 ===================================================== -->
+            <div class="toc">
+                <p class="font-semibold text-gray-800 mb-3">Spis treści</p>
+                <ol>
+                    <li><a href="#administrator">Administrator danych osobowych</a></li>
+                    <li><a href="#iod">Inspektor Ochrony Danych</a></li>
+                    <li><a href="#jakie-dane">Jakie dane zbieramy i w jakim celu</a></li>
+                    <li><a href="#odbiorcy">Komu przekazujemy Twoje dane</a></li>
+                    <li><a href="#transfery">Przekazywanie danych poza Europę (do USA)</a></li>
+                    <li><a href="#okres">Jak długo przechowujemy Twoje dane</a></li>
+                    <li><a href="#prawa">Twoje prawa</a></li>
+                    <li><a href="#cookies">Pliki cookies i podobne technologie</a></li>
+                    <li><a href="#dzieci">Dane osób niepełnoletnich</a></li>
+                    <li><a href="#zmiany">Zmiany polityki prywatności</a></li>
+                    <li><a href="#kontakt-pp">Kontakt w sprawach prywatności</a></li>
+                </ol>
             </div>
-        </div>
+
+            <div class="info-box">
+                <p><strong>Krótko i na temat:</strong> ta strona służy wyłącznie do prezentacji oferty i przyjmowania zapytań telefonicznych. Nie śledzimy Cię, nie instalujemy reklam i nie profilujemy. Twoje dane trafiają do nas tylko wtedy, gdy sam wypełniasz formularz kontaktowy.</p>
+            </div>
+
+            <!-- =====================================================
+                 1. ADMINISTRATOR
+                 ===================================================== -->
+            <!-- Podstawa prawna: art. 13 ust. 1 lit. a RODO (Rozporządzenie 2016/679) -->
+            <h2 id="administrator">1. Administrator danych osobowych</h2>
+
+            <p>Administratorem Twoich danych osobowych — czyli osobą, która decyduje po co i jak są przetwarzane — jest:</p>
+
+            <ul>
+                <li><strong>Imię i nazwisko / firma:</strong> <span class="placeholder">[PLACEHOLDER: pełna nazwa firmy lub imię i nazwisko osoby fizycznej prowadzącej działalność — np. Marcin Baran prowadzący działalność gospodarczą pod firmą Ubezpieczenia Marcin Baran]</span></li>
+                <li><strong>Adres siedziby:</strong> <span class="placeholder">[PLACEHOLDER: ulica, numer, kod pocztowy, miejscowość, kraj — np. ul. Kościuszki 2, 98-332 Rząśnia, Polska]</span></li>
+                <li><strong>NIP / REGON:</strong> <span class="placeholder">[PLACEHOLDER: numer NIP i/lub REGON]</span></li>
+                <li><strong>Adres e-mail:</strong> <span class="placeholder">[PLACEHOLDER: adres e-mail do kontaktu w sprawach ochrony danych — np. ubezpieczenia.rzasnia@onet.pl]</span></li>
+                <li><strong>Telefon:</strong> <span class="placeholder">[PLACEHOLDER: numer telefonu — opcjonalnie]</span></li>
+            </ul>
+
+            <p>W niniejszym dokumencie mówimy na siebie „my" lub „Administrator". Kiedy piszemy „Ty" albo „użytkownik", mamy na myśli Ciebie — osobę odwiedzającą tę stronę lub wysyłającą formularz kontaktowy.</p>
+
+            <!-- =====================================================
+                 2. IOD
+                 ===================================================== -->
+            <!-- Podstawa prawna: art. 13 ust. 1 lit. b RODO; art. 37 RODO -->
+            <h2 id="iod">2. Inspektor Ochrony Danych (IOD)</h2>
+
+            <p>Nie wyznaczyliśmy Inspektora Ochrony Danych. Zgodnie z art. 37 RODO obowiązek wyznaczenia IOD dotyczy organów publicznych oraz podmiotów, których główna działalność polega na regularnym i systematycznym monitorowaniu osób na dużą skalę lub przetwarzaniu szczególnych kategorii danych na dużą skalę. Nasza działalność — polegająca na pośrednictwie ubezpieczeniowym z ograniczonym zakresem przetwarzania danych kontaktowych — nie spełnia żadnego z tych kryteriów.</p>
+
+            <p>W sprawach dotyczących ochrony danych osobowych możesz kontaktować się bezpośrednio z nami pod adresem e-mail wskazanym w pkt. 1 lub pisemnie na adres siedziby.</p>
+
+            <!-- =====================================================
+                 3. JAKIE DANE I W JAKIM CELU
+                 ===================================================== -->
+            <!-- Podstawa prawna: art. 13 ust. 1 lit. c i d RODO -->
+            <h2 id="jakie-dane">3. Jakie dane zbieramy i w jakim celu</h2>
+
+            <p>Przetwarzamy wyłącznie te dane, które są niezbędne do konkretnego celu. Każdy cel opisujemy osobno poniżej, razem z podstawą prawną.</p>
+
+            <!-- CEL 1 -->
+            <!-- Podstawa prawna: art. 6 ust. 1 lit. a RODO (zgoda); art. 394 ustawy PKE z 2024 r. -->
+            <h3>3.1. Odpowiedź na Twoje zapytanie kontaktowe i umówienie spotkania</h3>
+
+            <p><strong>Dane:</strong> imię i nazwisko, numer telefonu, rodzaj ubezpieczenia, treść wiadomości (opcjonalna).</p>
+
+            <p><strong>Cel:</strong> skontaktowanie się z Tobą (telefon zwrotny w ciągu 15 minut), odpowiedź na pytania dotyczące ubezpieczeń, umówienie wizyty agenta.</p>
+
+            <p><strong>Podstawa prawna:</strong></p>
+            <ul>
+                <li>Art. 6 ust. 1 lit. <strong>b</strong> RODO — przetwarzanie jest niezbędne do podjęcia działań na Twoje żądanie przed zawarciem umowy (odpowiedź na zapytanie ofertowe).</li>
+                <li>Art. 6 ust. 1 lit. <strong>a</strong> RODO w zw. z art. 394 ustawy z dnia 12 lipca 2024 r. Prawo komunikacji elektronicznej (Dz.U. 2024 poz. 1777) — w zakresie kontaktu telefonicznego w celach marketingowych (przedstawienie oferty ubezpieczeniowej) wymagana jest i pobierana odrębna zgoda, którą wyrażasz, zaznaczając właściwy checkbox w formularzu.</li>
+            </ul>
+
+            <p><strong>Dobrowolność:</strong> podanie imienia i nazwiska oraz numeru telefonu jest warunkiem skorzystania z formularza kontaktowego. Bez tych danych nie możemy się z Tobą skontaktować. Podanie wiadomości jest opcjonalne.</p>
+
+            <!-- CEL 2 -->
+            <!-- Podstawa prawna: art. 6 ust. 1 lit. f RODO -->
+            <h3>3.2. Obsługa techniczna strony i zapewnienie jej bezpieczeństwa</h3>
+
+            <p><strong>Dane:</strong> adres IP, nagłówki HTTP (informacje o przeglądarce i systemie operacyjnym), data i godzina wejścia na stronę, odwiedzane podstrony — zbierane automatycznie przez naszego dostawcę hostingu (Netlify Inc.).</p>
+
+            <p><strong>Cel:</strong> zapewnienie prawidłowego działania strony, wykrywanie nadużyć (np. ataków DDoS), rozwiązywanie problemów technicznych.</p>
+
+            <p><strong>Podstawa prawna:</strong> art. 6 ust. 1 lit. <strong>f</strong> RODO — nasz prawnie uzasadniony interes polegający na zapewnieniu bezpieczeństwa i sprawnego działania strony internetowej. Interes ten oceniamy jako proporcjonalny: dane logów technicznych są ograniczone, przetwarzane automatycznie przez dostawcę hostingu, a ich brak uniemożliwiłby wykrywanie zagrożeń.</p>
+
+            <p><strong>Dobrowolność:</strong> podanie tych danych jest technicznie nieuniknione podczas korzystania z internetu. Możesz ograniczyć zakres danych, korzystając z VPN lub przeglądarki anonimowej, jednak nie wpłynie to na możliwość korzystania ze strony.</p>
+
+            <!-- CEL 3 -->
+            <!-- Podstawa prawna: art. 6 ust. 1 lit. f RODO; Dyrektywa 2002/58/WE art. 5 ust. 3 w implementacji PKE -->
+            <h3>3.3. Wyświetlenie mapy dojazdu do biura (Google Maps)</h3>
+
+            <p><strong>Dane:</strong> adres IP oraz dane przeglądarki — przesyłane do Google LLC (USA) w momencie załadowania mapy.</p>
+
+            <p><strong>Cel:</strong> ułatwienie znalezienia biura (wizualizacja lokalizacji ul. Kościuszki 2 w Rząśni).</p>
+
+            <p><strong>Podstawa prawna:</strong> art. 6 ust. 1 lit. <strong>f</strong> RODO — prawnie uzasadniony interes w postaci ułatwienia dostępu do informacji o lokalizacji biura.</p>
+
+            <div class="alert-box">
+                <p>⚠️ <strong>Ważna informacja:</strong> Mapa Google jest osadzona bezpośrednio na stronie (iframe), co powoduje, że Twój adres IP jest przekazywany do Google LLC (USA) od razu po wejściu na stronę — bez uprzedniej zgody. Zgodnie z aktualnymi interpretacjami RODO i wyrokiem TSUE w sprawie C-21/23 (październik 2024 r.) takie przetwarzanie może wymagać uprzedniej zgody. <strong>Zalecamy właścicielowi strony wdrożenie mechanizmu blokowania mapy do czasu wyrażenia zgody</strong> (np. za pomocą nakładki „Pokaż mapę") lub zastąpienie Google Maps mapą nietrackingową (np. OpenStreetMap). Do czasu wdrożenia tej zmiany prosimy o świadomość, że wchodząc na stronę, Twój adres IP jest przesyłany do Google.</p>
+            </div>
+
+            <!-- =====================================================
+                 4. ODBIORCY DANYCH
+                 ===================================================== -->
+            <!-- Podstawa prawna: art. 13 ust. 1 lit. e RODO -->
+            <h2 id="odbiorcy">4. Komu przekazujemy Twoje dane</h2>
+
+            <p>Twoje dane osobowe mogą być przekazywane wyłącznie podmiotom opisanym poniżej. Nie sprzedajemy danych osobowych żadnym podmiotom trzecim.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Podmiot</th>
+                        <th>Siedziba</th>
+                        <th>Rola</th>
+                        <th>Jakie dane / w jakim celu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Netlify, Inc.</strong></td>
+                        <td>512 2nd Street, Suite 200, San Francisco, CA 94107, USA</td>
+                        <td>Podmiot przetwarzający (procesor) na podstawie umowy DPA</td>
+                        <td>Hosting strony; obsługa formularza kontaktowego (Netlify Forms) — przetwarza dane z formularza (imię, nazwisko, telefon, treść wiadomości) oraz logi techniczne (adresy IP, nagłówki HTTP). Logi przechowywane 30 dni.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google LLC</strong></td>
+                        <td>1600 Amphitheatre Pkwy, Mountain View, CA 94043, USA</td>
+                        <td>Odrębny administrator (w zakresie danych zbieranych przez Google Maps)</td>
+                        <td>Wyświetlanie mapy dojazdu do biura. Google może zbierać adres IP i dane przeglądarki. Polityka prywatności Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Towarzystwa ubezpieczeniowe</strong></td>
+                        <td>Różne kraje EOG</td>
+                        <td>Odrębni administratorzy lub współadministratorzy (wyłącznie po nawiązaniu współpracy)</td>
+                        <td>Dane niezbędne do sporządzenia oferty ubezpieczeniowej — przekazywane wyłącznie po wyrażeniu przez Ciebie zgody lub w ramach realizacji umowy, na etapie właściwej obsługi. Nie dotyczy etapu formularza kontaktowego.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Organy publiczne</strong></td>
+                        <td>Polska</td>
+                        <td>Uprawniony odbiorca</td>
+                        <td>Wyłącznie na podstawie obowiązujących przepisów prawa (np. na żądanie sądu, prokuratury, KNF, UODO).</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Nie korzystamy z usług firm analitycznych, marketingowych, reklamowych ani z platform social media w sposób, który wiązałby się z przekazywaniem Twoich danych osobowych.</p>
+
+            <!-- =====================================================
+                 5. TRANSFERY POZA EOG
+                 ===================================================== -->
+            <!-- Podstawa prawna: art. 13 ust. 1 lit. f RODO; art. 44–49 RODO -->
+            <h2 id="transfery">5. Przekazywanie danych poza Europę (do USA)</h2>
+
+            <p>Dwóch naszych dostawców usług ma siedzibę w Stanach Zjednoczonych. USA nie jest krajem uznanym przez Komisję Europejską za zapewniający taki sam poziom ochrony danych jak Unia Europejska, dlatego transfer danych wymaga odpowiednich zabezpieczeń. Poniżej wyjaśniamy, jakie zabezpieczenia stosuje każdy z dostawców.</p>
+
+            <h3>5.1. Netlify, Inc. — hosting i formularze</h3>
+
+            <p><strong>Mechanizm legalizujący transfer:</strong></p>
+            <ul>
+                <li><strong>EU-US Data Privacy Framework (DPF)</strong> — Netlify posiada aktywną certyfikację DPF wydaną przez Departament Handlu USA. Certyfikacja zobowiązuje Netlify do przestrzegania zasad ochrony danych zbliżonych do standardów unijnych, pod nadzorem Federalnej Komisji Handlu (FTC). Możesz zweryfikować certyfikat na stronie: <a href="https://www.dataprivacyframework.gov" target="_blank" rel="noopener noreferrer">dataprivacyframework.gov</a></li>
+                <li><strong>Standardowe klauzule umowne (SCC)</strong> z 2021 r. — Netlify stosuje również SCC przyjęte przez Komisję Europejską decyzją z 4 czerwca 2021 r. jako uzupełniający mechanizm transferu.</li>
+            </ul>
+
+            <div class="alert-box">
+                <p>⚠️ <strong>Ryzyko rezydualne:</strong> Organizacja NOYB zapowiedziała potencjalny zaskarżenie DPF przed TSUE (tzw. „Schrems III"). Sprawa formalnie nie została złożona do maja 2026 r. Gdyby DPF zostało unieważnione, Netlify nadal dysponuje SCC jako fallback. Niemniej istnieje ryzyko prawnej niepewności, jeśli w przyszłości zmianie ulegnie polityka USA wobec nadzoru nad danymi.</p>
+            </div>
+
+            <h3>5.2. Google LLC — Google Maps</h3>
+
+            <p><strong>Mechanizm legalizujący transfer:</strong></p>
+            <ul>
+                <li><strong>EU-US Data Privacy Framework (DPF)</strong> — Google LLC posiada certyfikację DPF.</li>
+                <li><strong>Standardowe klauzule umowne (SCC)</strong> — Google stosuje SCC z 2021 r.</li>
+            </ul>
+
+            <p>Zwracamy uwagę, że Google jako odrębny administrator przetwarza dane zgodnie z własną polityką prywatności, która może obejmować cele (np. reklamowe) wykraczające poza cel, w jakim korzystamy z mapy.</p>
+
+            <!-- =====================================================
+                 6. OKRES PRZECHOWYWANIA
+                 ===================================================== -->
+            <!-- Podstawa prawna: art. 13 ust. 2 lit. a RODO; zasada minimalizacji z art. 5 ust. 1 lit. e RODO -->
+            <h2 id="okres">6. Jak długo przechowujemy Twoje dane</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Kategoria danych</th>
+                        <th>Okres przechowywania</th>
+                        <th>Podstawa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dane z formularza kontaktowego (imię, nazwisko, telefon, wiadomość)</td>
+                        <td>Do czasu obsługi zapytania, a po jej zakończeniu — do czasu upływu terminów roszczeń z tytułu ewentualnych umów (co do zasady 3 lata dla roszczeń z umów, chyba że przepisy ubezpieczeniowe stanowią inaczej). W razie braku zawarcia umowy — nie dłużej niż 12 miesięcy od ostatniego kontaktu.</td>
+                        <td>Art. 6 ust. 1 lit. b i f RODO; art. 118 i nast. Kodeksu cywilnego</td>
+                    </tr>
+                    <tr>
+                        <td>Dane z formularza, jeśli wyrażono zgodę na marketing telefoniczny</td>
+                        <td>Do czasu wycofania zgody lub do czasu złożenia sprzeciwu wobec przetwarzania — w zależności co nastąpi wcześniej.</td>
+                        <td>Art. 6 ust. 1 lit. a RODO; art. 394 PKE</td>
+                    </tr>
+                    <tr>
+                        <td>Logi techniczne (adresy IP, nagłówki HTTP) — przechowywane przez Netlify</td>
+                        <td>30 dni (standard Netlify, zgodnie z ich DPA)</td>
+                        <td>Art. 6 ust. 1 lit. f RODO; DPA Netlify</td>
+                    </tr>
+                    <tr>
+                        <td>Dane przekazywane Google (adres IP w związku z mapą)</td>
+                        <td>Zgodnie z polityką prywatności Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a></td>
+                        <td>Google jako odrębny administrator</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Po upływie wskazanego okresu dane są usuwane lub anonimizowane w sposób uniemożliwiający identyfikację.</p>
+
+            <!-- =====================================================
+                 7. PRAWA UŻYTKOWNIKA
+                 ===================================================== -->
+            <!-- Podstawa prawna: art. 13 ust. 2 lit. b i c RODO; art. 15–22 RODO -->
+            <h2 id="prawa">7. Twoje prawa</h2>
+
+            <p>RODO przyznaje Ci szereg praw wobec Twoich danych osobowych. Poniżej opisujemy każde z nich prostym językiem.</p>
+
+            <h3>7.1. Prawo dostępu do danych (art. 15 RODO)</h3>
+            <p>Możesz zapytać nas, jakie Twoje dane przechowujemy, w jakim celu, skąd je mamy i komu je przekazaliśmy. Odpowiemy w ciągu 30 dni (w uzasadnionych przypadkach termin może być przedłużony o kolejne 60 dni — poinformujemy Cię o tym).</p>
+
+            <h3>7.2. Prawo do sprostowania danych (art. 16 RODO)</h3>
+            <p>Jeśli Twoje dane są nieprawidłowe lub niekompletne — możesz zażądać ich poprawienia.</p>
+
+            <h3>7.3. Prawo do usunięcia danych — „prawo do bycia zapomnianym" (art. 17 RODO)</h3>
+            <p>Możesz zażądać usunięcia swoich danych, jeśli: cofnąłeś zgodę, dane nie są już potrzebne do celu, w jakim były zbierane, lub przetwarzanie jest niezgodne z prawem. Prawo to nie ma zastosowania, jeżeli przetwarzanie jest niezbędne do ustalenia, dochodzenia lub obrony roszczeń.</p>
+
+            <h3>7.4. Prawo do ograniczenia przetwarzania (art. 18 RODO)</h3>
+            <p>Możesz zażądać, abyśmy ograniczyli przetwarzanie Twoich danych — na przykład jeśli kwestionujesz ich prawidłowość lub uważasz, że przetwarzamy je bezprawnie, ale nie chcesz ich usunięcia. W czasie ograniczenia możemy dane jedynie przechowywać.</p>
+
+            <h3>7.5. Prawo do przenoszenia danych (art. 20 RODO)</h3>
+            <p>Możesz poprosić o otrzymanie swoich danych w ustrukturyzowanym, powszechnie używanym formacie nadającym się do odczytu maszynowego (np. CSV), aby przekazać je innemu administratorowi. Prawo to dotyczy wyłącznie danych przetwarzanych na podstawie Twojej zgody lub umowy — nie dotyczy danych przetwarzanych na podstawie naszego uzasadnionego interesu.</p>
+
+            <h3>7.6. Prawo do sprzeciwu (art. 21 RODO)</h3>
+            <p>Masz prawo wnieść sprzeciw wobec przetwarzania Twoich danych opartego na naszym prawnie uzasadnionym interesie (art. 6 ust. 1 lit. f). Po wniesieniu sprzeciwu zaprzestaniemy przetwarzania, chyba że wykażemy istnienie ważnych, prawnie uzasadnionych podstaw nadrzędnych wobec Twoich interesów lub danych niezbędnych do ustalenia, dochodzenia bądź obrony roszczeń.</p>
+
+            <h3>7.7. Prawa w zakresie zautomatyzowanego podejmowania decyzji (art. 22 RODO)</h3>
+            <p>Nie stosujemy zautomatyzowanego podejmowania decyzji (w tym profilowania) w stosunku do użytkowników tej strony. Żadna decyzja wywołująca wobec Ciebie skutki prawne lub podobnie na Ciebie oddziałująca nie jest podejmowana wyłącznie w sposób zautomatyzowany.</p>
+
+            <h3>7.8. Prawo do cofnięcia zgody</h3>
+            <p>Jeżeli przetwarzanie Twoich danych odbywa się na podstawie zgody, masz prawo ją cofnąć w dowolnym momencie. Wycofanie zgody nie wpływa na zgodność z prawem przetwarzania, które miało miejsce przed jej cofnięciem.</p>
+            <p>Aby cofnąć zgodę na kontakt telefoniczny w celach marketingowych, wystarczy wysłać wiadomość e-mail na adres wskazany w pkt. 1 tej polityki lub powiedzieć o tym podczas rozmowy telefonicznej.</p>
+
+            <h3>7.9. Prawo do skargi do organu nadzorczego</h3>
+            <p>Jeśli uważasz, że przetwarzamy Twoje dane niezgodnie z prawem, masz prawo wnieść skargę do Prezesa Urzędu Ochrony Danych Osobowych (UODO) — polskiego organu nadzorczego ds. ochrony danych.</p>
+            <p>Aktualne dane kontaktowe UODO (stan na maj 2026 r.):</p>
+            <ul>
+                <li>Adres: ul. Stanisława Moniuszki 1A, 00-014 Warszawa (wcześniejszy adres: ul. Stawki 2 — korespondencja jest przekierowywana)</li>
+                <li>Telefon: (22) 531 03 00</li>
+                <li>E-mail: <a href="mailto:kancelaria@uodo.gov.pl">kancelaria@uodo.gov.pl</a></li>
+                <li>Strona: <a href="https://uodo.gov.pl" target="_blank" rel="noopener noreferrer">uodo.gov.pl</a></li>
+            </ul>
+
+            <h3>Jak skorzystać ze swoich praw?</h3>
+            <p>Wyślij nam wiadomość e-mail lub list na adres podany w pkt. 1. Odpowiemy w ciągu 30 dni. W razie uzasadnionych wątpliwości co do Twojej tożsamości możemy poprosić o potwierdzenie, że jesteś osobą, której dane dotyczą.</p>
+
+            <!-- =====================================================
+                 8. PLIKI COOKIES
+                 ===================================================== -->
+            <!-- Podstawa prawna: art. 5 ust. 3 Dyrektywy 2002/58/WE (ePrivacy) w implementacji art. 394 PKE (Dz.U. 2024 poz. 1777); art. 6 RODO -->
+            <h2 id="cookies">8. Pliki cookies i podobne technologie</h2>
+
+            <p>Plik cookie to mały plik tekstowy zapisywany na Twoim urządzeniu przez stronę internetową. Działa jak „naklejka z imieniem" — pozwala stronie rozpoznać Cię przy kolejnej wizycie.</p>
+
+            <h3>8.1. Czy ta strona korzysta z cookies?</h3>
+
+            <p>Sama strona (w warstwie własnego kodu) <strong>nie ustawia żadnych plików cookies</strong>. Nie korzystamy z narzędzi analitycznych, reklamowych ani marketingowych, które wymagałyby plików cookies.</p>
+
+            <p>Jednak dwóch zewnętrznych dostawców może ustawiać cookies niezależnie od naszej woli:</p>
+
+            <h3>8.2. Cookies ustawiane przez dostawców zewnętrznych</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dostawca</th>
+                        <th>Kategoria</th>
+                        <th>Przykładowe nazwy cookies</th>
+                        <th>Cel</th>
+                        <th>Czas życia</th>
+                        <th>Transfer poza EOG</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Netlify, Inc.</strong></td>
+                        <td>Niezbędne (techniczne)</td>
+                        <td><code>nf_uid</code>, <code>nf_ab</code></td>
+                        <td>Obsługa formularzy Netlify Forms; ochrona przed spamem (bot detection)</td>
+                        <td>Do końca sesji / do 1 roku</td>
+                        <td>USA — DPF + SCC</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google LLC</strong></td>
+                        <td>Funkcjonalne / potencjalnie marketingowe</td>
+                        <td><code>NID</code>, <code>CONSENT</code>, <code>SOCS</code>, <code>1P_JAR</code></td>
+                        <td>Wyświetlanie mapy Google Maps; może obejmować cele reklamowe Google</td>
+                        <td>Od sesji do 2 lat</td>
+                        <td>USA — DPF + SCC</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>8.3. sessionStorage — nie jest cookie</h3>
+            <p>Strona korzysta z <code>sessionStorage</code> przeglądarki do zapamiętania pozycji przewijania (scroll). Dane te:</p>
+            <ul>
+                <li>przechowywane są wyłącznie w Twojej przeglądarce (nie wysyłane do serwera),</li>
+                <li>są usuwane automatycznie po zamknięciu karty,</li>
+                <li>nie są plikiem cookie i nie wymagają zgody.</li>
+            </ul>
+
+            <h3>8.4. Zarządzanie cookies</h3>
+
+            <div class="alert-box">
+                <p>⚠️ <strong>Informacja dla właściciela strony:</strong> Strona w aktualnym kształcie nie posiada baneru zarządzania zgodami (cookie banner). Cookies Google Maps ustawiane są bez uprzedniej zgody użytkownika. Zgodnie z wytycznymi UODO (Marzec 2025) i wyrokiem TSUE C-21/23 (październik 2024) <strong>wymagane jest wdrożenie mechanizmu zbierania zgód</strong> przed załadowaniem Google Maps. Po wdrożeniu cookie banneru należy zaktualizować tę sekcję.</p>
+            </div>
+
+            <p>Możesz zarządzać plikami cookies w ustawieniach swojej przeglądarki:</p>
+            <ul>
+                <li><strong>Chrome:</strong> Ustawienia → Prywatność i bezpieczeństwo → Pliki cookie i inne dane witryn</li>
+                <li><strong>Firefox:</strong> Ustawienia → Prywatność i bezpieczeństwo → Ciasteczka i dane witryn</li>
+                <li><strong>Safari:</strong> Preferencje → Prywatność → Pliki cookie i dane witryn</li>
+                <li><strong>Edge:</strong> Ustawienia → Pliki cookie i uprawnienia witryny</li>
+            </ul>
+
+            <p>Zablokowanie cookies może wpłynąć na działanie formularza kontaktowego i wyświetlanie mapy.</p>
+
+            <p>Możesz też zrezygnować ze śledzenia przez Google pod adresem: <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">adssettings.google.com</a>.</p>
+
+            <!-- =====================================================
+                 9. DZIECI
+                 ===================================================== -->
+            <!-- Podstawa prawna: art. 8 RODO -->
+            <h2 id="dzieci">9. Dane osób niepełnoletnich</h2>
+
+            <p>Usługi świadczone za pośrednictwem tej strony kierowane są do osób pełnoletnich lub do rodziców i opiekunów prawnych działających w imieniu rodziny. Formularz kontaktowy służy wyłącznie do kontaktu w sprawie zakupu polis ubezpieczeniowych — produktów, które samodzielnie mogą nabywać wyłącznie osoby pełnoletnie lub za zgodą opiekuna.</p>
+
+            <p>Nie zbieramy świadomie danych osobowych od dzieci poniżej 16. roku życia. Jeśli dowiesz się, że Twoje dziecko przekazało nam dane bez Twojej zgody, skontaktuj się z nami — niezwłocznie usuniemy te dane.</p>
+
+            <!-- =====================================================
+                 10. ZMIANY
+                 ===================================================== -->
+            <!-- Podstawa prawna: zasada przejrzystości, art. 5 ust. 1 lit. a RODO -->
+            <h2 id="zmiany">10. Zmiany polityki prywatności</h2>
+
+            <p>Możemy aktualizować tę politykę prywatności, gdy zajdą następujące okoliczności:</p>
+            <ul>
+                <li>zmienią się przepisy prawa lub wytyczne organów nadzorczych,</li>
+                <li>zmienimy zakres usług lub dostawców,</li>
+                <li>zmienimy sposób przetwarzania danych.</li>
+            </ul>
+
+            <p>O każdej istotnej zmianie poinformujemy poprzez aktualizację daty w nagłówku tej strony. Jeśli zmiana wpłynęłaby na podstawę prawną przetwarzania danych opartą na Twojej zgodzie, skontaktujemy się z Tobą w celu uzyskania nowej zgody (o ile posiadamy Twoje dane kontaktowe).</p>
+
+            <p>Zachęcamy do regularnego sprawdzania tej strony. Korzystanie ze strony po dacie zmiany polityki oznacza akceptację nowej wersji.</p>
+
+            <!-- =====================================================
+                 11. KONTAKT
+                 ===================================================== -->
+            <h2 id="kontakt-pp">11. Kontakt w sprawach prywatności</h2>
+
+            <p>We wszystkich sprawach dotyczących ochrony danych osobowych możesz się z nami kontaktować:</p>
+            <ul>
+                <li><strong>E-mail:</strong> <span class="placeholder">[PLACEHOLDER: adres e-mail do spraw prywatności]</span></li>
+                <li><strong>Poczta:</strong> <span class="placeholder">[PLACEHOLDER: adres siedziby]</span></li>
+                <li><strong>Telefon:</strong> <span class="placeholder">[PLACEHOLDER: numer telefonu — opcjonalnie]</span></li>
+            </ul>
+
+            <p>Odpowiadamy na wszystkie wnioski w ciągu 30 dni od ich otrzymania.</p>
+
+            <hr style="margin: 2rem 0; border-color: #e5e7eb;">
+
+            <!-- =====================================================
+                 LISTA KONTROLNA "CZEGO NIE SPRAWDZIŁ AI"
+                 ===================================================== -->
+            <div style="background-color: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 0.5rem; padding: 1.5rem; margin-top: 2rem;">
+                <h2 style="color: #166534; border-color: #86efac; margin-top: 0;">✅ Lista kontrolna: czego NIE sprawdził AI — do weryfikacji przez prawnika</h2>
+
+                <p style="color: #166534;"><em>Poniższe kwestie wymagają oceny przez radcę prawnego lub adwokata znającego specyfikę Twojej działalności. Nie da się ich rozstrzygnąć wyłącznie na podstawie kodu strony.</em></p>
+
+                <ol style="color: #374151;">
+                    <li style="margin-bottom: 0.75rem;">
+                        <strong>Status prawny działalności a obowiązek rejestracji CEIDG/KRS:</strong> Polityka używa placeholderów dla NIP/REGON/KRS. Należy ustalić, czy Marcin Baran działa jako osoba fizyczna prowadząca działalność, spółka, czy w innej formie — i jakie dane identyfikacyjne należy ujawnić zgodnie z ustawą o prawach konsumenta i ustawą o świadczeniu usług drogą elektroniczną.
+                    </li>
+                    <li style="margin-bottom: 0.75rem;">
+                        <strong>Status agenta ubezpieczeniowego a przetwarzanie danych:</strong> Agent ubezpieczeniowy działający na zlecenie towarzystw ubezpieczeniowych może być w pewnych sytuacjach współadministratorem danych wraz z towarzystwem lub wyłącznie podmiotem przetwarzającym. Prawnik powinien ocenić, czy i z którymi towarzystwami wymagane są umowy powierzenia przetwarzania (art. 28 RODO) lub ustalenia dot. współadministrowania (art. 26 RODO), i czy wymagają one osobnego ujawnienia w polityce prywatności.
+                    </li>
+                    <li style="margin-bottom: 0.75rem;">
+                        <strong>Obowiązek informacyjny KNF i ustawa o dystrybucji ubezpieczeń:</strong> Ustawa z 15 grudnia 2017 r. o dystrybucji ubezpieczeń (Dz.U. 2023 poz. 1450) nakłada odrębne obowiązki informacyjne na agentów ubezpieczeniowych. Należy sprawdzić, czy art. 8–11 tejże ustawy nakłada dodatkowe obowiązki informacyjne dot. przetwarzania danych klientów, które powinny znaleźć się w polityce prywatności lub w odrębnym dokumencie.
+                    </li>
+                    <li style="margin-bottom: 0.75rem;">
+                        <strong>Podstawa prawna dla przetwarzania danych po zawarciu umowy ubezpieczenia:</strong> Ta polityka obejmuje wyłącznie etap przed-umowny (formularz kontaktowy, wycena). Pełna obsługa klienta obejmuje zawieranie polis, obsługę szkód itp. — te procesy wymagają odrębnych klauzul informacyjnych zbieranych w momencie podpisywania dokumentów ubezpieczeniowych. Prawnik powinien ocenić, czy polityka strony powinna je wstępnie sygnalizować.
+                    </li>
+                    <li style="margin-bottom: 0.75rem;">
+                        <strong>Szczególne kategorie danych osobowych (art. 9 RODO):</strong> Ubezpieczenia na życie i ubezpieczenia zdrowotne mogą wiązać się z przetwarzaniem danych o stanie zdrowia — szczególnej kategorii danych. AI nie mogło ustalić, czy takie dane są zbierane podczas spotkań z klientem. Prawnik powinien ocenić, czy konieczne jest rozszerzenie polityki o tę kategorię i jaka jest właściwa podstawa prawna (art. 9 ust. 2 RODO).
+                    </li>
+                    <li style="margin-bottom: 0.75rem;">
+                        <strong>Rejestr czynności przetwarzania (art. 30 RODO):</strong> AI nie zweryfikowało, czy Administrator prowadzi rejestr czynności przetwarzania. Rejestr jest obowiązkowy, choć prawnik powinien ocenić, czy w tym przypadku istnieje zwolnienie dla mniejszych podmiotów (art. 30 ust. 5 RODO — zwolnienie dotyczy organizacji < 250 pracowników, ale z wyjątkami m.in. dla przetwarzania danych szczególnych kategorii).
+                    </li>
+                    <li style="margin-bottom: 0.75rem;">
+                        <strong>Obowiązki wynikające z UODO wobec danych biometrycznych / nagrań:</strong> Strona nie wskazuje, czy w biurze stosowane jest monitorowanie wizyjne (kamery). Jeśli tak — wymagana jest odrębna klauzula RODO i oznakowanie.
+                    </li>
+                    <li style="margin-bottom: 0.75rem;">
+                        <strong>Zgodność zgody marketingowej z PKE art. 394:</strong> Checkbox zgody na kontakt telefoniczny jest obowiązkowy (required) i sprzęgnięty z formularzem kontaktowym. Prawnik powinien ocenić, czy zgoda udzielona jako warunek wysłania formularza spełnia wymóg dobrowolności z art. 4 pkt 11 RODO i art. 394 PKE. Alternatywą może być rozdzielenie: formularz jest dostępny bez tej zgody, a zgoda marketingowa jest opcjonalna.
+                    </li>
+                    <li style="margin-bottom: 0.75rem;">
+                        <strong>Hostowanie na GitHub Pages vs. Netlify:</strong> W kodzie strony odnośniki canonical i Open Graph wskazują na <code>bartekfc25.github.io/tescik/</code> (GitHub Pages, właściciel: Microsoft/GitHub). Jeżeli strona jest rzeczywiście hostowana na Netlify, linki canonical wymagają aktualizacji. Jeżeli strona jest hostowana na GitHub Pages — GitHub (Microsoft, USA) jest dodatkowym procesorem i powinien zostać ujawniony w polityce jako odrębny odbiorca danych.
+                    </li>
+                    <li style="margin-bottom: 0.75rem;">
+                        <strong>Wdrożenie cookie bannera:</strong> Strona wymaga pilnego wdrożenia mechanizmu zarządzania zgodami (cookie consent manager) zanim dojdzie do kontroli UODO. Prawnik lub specjalista UX powinien ocenić, czy blokowanie Google Maps do czasu zgody jest technicznie i biznesowo wykonalne, czy lepszym rozwiązaniem jest całkowite zastąpienie mapy (np. OpenStreetMap), co wyeliminowałoby problem.
+                    </li>
+                    <li style="margin-bottom: 0.75rem;">
+                        <strong>Ocena skutków dla ochrony danych (DPIA, art. 35 RODO):</strong> Prawnik powinien ocenić, czy zakres przetwarzania danych (w tym ewentualne dane zdrowotne w ubezpieczeniach na życie) wymaga przeprowadzenia DPIA. Jeśli tak — jej wyniki mogą wpłynąć na treść polityki.
+                    </li>
+                </ol>
+
+                <p style="color: #166534; font-style: italic; font-size: 0.875rem;">Powyższa lista nie jest wyczerpująca. Dokument ten stanowi punkt wyjścia do pracy z prawnikiem, nie zastępuje porady prawnej.</p>
+            </div>
+
+        </div><!-- end .policy-content -->
     </div>
 </main>
 
@@ -105,7 +643,7 @@
 <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 border-b border-gray-800 pb-8">
-            
+
             <div class="col-span-1">
                 <div class="flex items-center mb-4">
                     <i class="fa-solid fa-shield-halved text-brand-accent text-2xl mr-3"></i>
@@ -165,7 +703,7 @@
         btn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
         });
-        
+
         const mobileLinks = menu.querySelectorAll('a');
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {

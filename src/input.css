@@ -89,6 +89,15 @@ main {
 }
 .nav-link:hover::after { transform: scaleX(1); }
 
+/* Hover na żółto dla linków kontaktowych */
+.contact-link {
+    color: white;
+    transition: color 0.3s;
+}
+.contact-link:hover {
+    color: #f59e0b;
+}
+
 /* Klasy awaryjne dla kolorów[cite: 2] */
 .bg-brand { background-color: #1d4ed8 !important; }
 .bg-brand-dark { background-color: #1e3a8a !important; }
