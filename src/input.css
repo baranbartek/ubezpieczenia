@@ -213,3 +213,15 @@ main {
   font-weight: 800;
   src: url('../fonts/montserrat-v31-latin_latin-ext-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+/* Stany walidacji formularza */
+.field-error   { border-color: var(--color-red-500) !important; }
+.field-success { border-color: var(--color-green-500) !important; }
+.field-error-msg {
+    color: var(--color-red-500);
+    font-size: var(--text-xs);
+    margin-top: 0.25rem;
+    display: block;
+    min-height: 1rem;
+}
+.checkbox-error { outline: 2px solid var(--color-red-500); border-radius: 6px; }
