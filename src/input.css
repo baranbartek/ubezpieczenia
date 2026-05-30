@@ -89,6 +89,34 @@ main {
 }
 .nav-link:hover::after { transform: scaleX(1); }
 
+/* Custom checkbox */
+.checkbox-form {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 1.1rem;
+    height: 1.1rem;
+    min-width: 1.1rem;
+    border: 2px solid #9ca3af;
+    border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    position: relative;
+    margin-top: 1px;
+}
+.checkbox-form:hover {
+    border-color: #1d4ed8;
+    box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.15);
+}
+.checkbox-form:checked {
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
+}
+.checkbox-form:focus-visible {
+    outline: 2px solid #1d4ed8;
+    outline-offset: 2px;
+}
+
 /* Hover na żółto dla linków kontaktowych */
 .contact-link {
     color: white;
